@@ -1,23 +1,27 @@
 <h2 class = "zagolovok">Ingredients</h2>
   <div class="container">
-    <div>
+    <div id = "pic">
       <img alt = 's1.jpg' src="assets/s1" width="700" height="400" alt="Syrniky">
     </div>
 
-    <div>
-      <p>
-        <ul>
-          <li>3 tablespoon of flour <br></li>
-          <li>2-3 tablespoons of sugar <br></li>
-          <li>2 eggs <br></li>
-          <li>500 grams of water <br></li>
-          <li>flour for breading, vegetable oil for frying <br></p></li>
-        </ul>
-      </p>
+    <div class = "one">
+      <p><%= @flour %> tablespoon of flour <br></p>
+      <p><%= @sugar %> tablespoons of sugar <br></p>
+      <p><%= @eggs %> eggs <br></li>
+      <p><%= @tvorog %> grams of tvorog <br></p>
+      <p>flour for breading, vegetable oil for frying <br></p>
     </div>
 
-    <h2>How many people to be eating your dish?</h2>
-
+    <h2 class = "zagolovok">How many people to be eating your dish?</h2>
+    <div class = "one">
+      <ul class="pagination pagination-lg">
+        <li><a href="/recipe">1</a></li>
+        <li><a href="/recipe?people=2">2</a></li>
+        <li><a href="/recipe?people=3">3</a></li>
+        <li><a href="/recipe?people=4">4</a></li>
+        <li><a href="/recipe?people=5">5</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
